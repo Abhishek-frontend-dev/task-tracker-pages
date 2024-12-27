@@ -408,6 +408,29 @@ color:#fff;
   transition: transform 0.3s ease;
 }
 
+
+.landingpage-card h3 {
+  font-size: 1.5em;
+  color: #091C39;
+  margin-bottom: 0.5rem;
+  font-family: ProximaNovaaltBold, monospace;
+  min-height: 3rem;
+  font-weight: bolder;
+  text-align: start;
+  margin-top: 1rem;
+}
+
+
+.landingpage-card p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1rem;
+  font-family: ProximaNovaaltRegular, sans-serif;
+  flex-grow: 1;
+  text-align: start;
+}
+
 /**3 row grid code end**/
 .card-1-img img, .card-1-img {
   width: 100%;
@@ -426,6 +449,7 @@ color:#fff;
   margin-top: 1rem;
 }
 
+
 .card p {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -437,6 +461,29 @@ color:#fff;
 }
 
 /* Media Queries for Responsiveness */
+
+
+/**3 row grid card**/
+@media (max-width: 1024px) and (min-width: 768px) {
+  .landingpage-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landingpage-card  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landingpage-card  {
+    width: 100%;
+  }
+}
+
+/**3 row grid card end here**/
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .Key-features {
