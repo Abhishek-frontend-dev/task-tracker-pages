@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team collaboration </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     
@@ -34,6 +35,7 @@
 
         
         <section class="collaboration-section">
+
             <div class="container">
               <h2>Why Team Collaboration Matters</h2>
               <div class="cards-wrapper">
@@ -224,6 +226,154 @@
  
              <!--Industries That Benefit from Team Collaboration Tools end   here-->
 
+
+
+             <!--Steps to Implement Our Online Team Collaboration Software start here-->
+
+        <div class="how-it-works">
+          <h3 class="how-it-works-heading">Steps to Implement Our Online Team Collaboration Software</h3>
+      
+          <!-- Step 1 -->
+          <div class="how-it-works-step">
+              <div class="step-img">
+                  <img src="assets/images-empoly-man/Sign-Up.webp" alt="Step 1">
+              </div>
+              <div class="step-text">
+                  <h3 class="step-heading">Sign Up and Get Started</h3>
+                  <p class="step-description"> Create an account and explore the system’s features for seamless collaboration.</p>
+              </div>
+          </div>
+      
+          <!-- Step 2 -->
+          <div class="how-it-works-step reverse">
+              <div class="step-text">
+                  <h3 class="step-heading">Onboard Your Team</h3>
+                  <p class="step-description">Add team members, assign roles, and establish collaborative workflows.</p>
+              </div>
+              <div class="step-img">
+                  <img src="assets/images-empoly-man/Assign-and-Manage-task.webp" alt="Step 2">
+              </div>
+          </div>
+      
+          <!-- Step 3 -->
+          <div class="how-it-works-step">
+              <div class="step-img">
+                  <img src="assets/images-empoly-man/Track-Progress-in-real-time.webp" alt="Step 3">
+              </div>
+              <div class="step-text">
+                  <h3 class="step-heading">Set Up Tasks and Projects</h3>
+                  <p class="step-description">Create tasks, define priorities, and set clear deadlines.</p>
+              </div>
+          </div>
+      
+          <!-- Step 4 -->
+          <div class="how-it-works-step reverse">
+              <div class="step-text">
+                  <h3 class="step-heading">Track and Collaborate</h3>
+                  <p class="step-description"> Use the tools to monitor progress and foster teamwork throughout the project.</p>
+              </div>
+              <div class="step-img">
+                  <img src="assets/images-empoly-man/Generate-Reports.webp" alt="Step 4">
+              </div>
+          </div>
+
+    <!-- Step 5 -->
+    <div class="how-it-works-step">
+      <div class="step-img">
+          <img src="assets/images-empoly-man/Track-Progress-in-real-time.webp" alt="Step 3">
+      </div>
+      <div class="step-text">
+          <h3 class="step-heading">Analyze and Improve</h3>
+          <p class="step-description"> leverage analytics to optimize processes and drive better results in your team collaboration software.</p>
+      </div>
+  </div>
+
+      </div>
+      
+      
+       <!--Steps to Implement Our Online Team Collaboration Software end here-->
+
+
+       <!--faqs start here-->
+
+<div class="qna-container">
+  <h3 class="full-width-heading">FAQ</h3>
+  <p class="full-width-para">You Also Must Know</p>
+<div class="accordion">
+  <div class="question">
+      <h4>How does your task tracking system improve team collaboration?</h4>
+      <i class="icon fa-solid fa-sort-down"></i>
+  </div>
+  <div class="answer">
+     <p> Our system centralizes communication, provides real-time updates, and ensures task visibility, enabling teams to collaborate more effectively and reduce misunderstandings.</p>
+  </div>
+</div>
+<!--qna 2-->
+<div class="accordion">
+  <div class="question">
+      <h4>Can this system integrate with other tools we use?</h4>
+      <i class="icon fa-solid fa-sort-down"></i>
+  </div>
+  <div class="answer">
+      <p> Yes, our solution integrates seamlessly with popular tools like calendars, email platforms, and project management apps to enhance collaborative workflows.</p>
+  </div>
+</div>
+
+<!--qna 3-->
+<div class="accordion">
+  <div class="question">
+      <h4>Is the system suitable for remote teams?</h4>
+      <i class="icon fa-solid fa-sort-down"></i>
+  </div>
+  <div class="answer">
+     <p> Absolutely! Our cloud-based platform ensures that remote teams stay connected and productive from anywhere in the world.</p>
+  </div>
+</div>
+
+<div class="accordion">
+  <div class="question">
+      <h4>How does time tracking support collaboration?</h4>
+      <i class="icon fa-solid fa-sort-down"></i>
+  </div>
+  <div class="answer">
+      <p>Time tracking helps identify task durations and resource allocation, ensuring fair workload distribution and timely project completion. This helps improve collaboration and efficiency within teams.</p>
+  </div>
+</div>
+
+</div>
+
+<!--faqs end here-->
+
+<!--ready to start start here-->
+
+<section class="ready-to-start">
+  <div class="ready-to-container">
+          <img src="images/imgpsh_fullsize_anim.png" alt="">
+      <div class="ready-to-text">
+          <h5>Transform Your Team’s Performance Today</h5>
+          <p>Start improving the way you manage tasks today and watch your business performance soar. Sign up now to experience the benefits of simplified task tracking!</p>
+          <a href="https://tasktracker.in/app/employer/registration" class="hero-btn">Sign Up</a>  
+      </div>
+  </div>
+</section>
+
+<!--ready to start end here-->
+
+<!--script-->  
+<script>
+  const accordions = document.querySelectorAll('.accordion');
+
+  accordions.forEach(accordion =>{
+      const icons = accordion.querySelector('.icon');
+      const answers = accordion.querySelector('.answer');
+
+      accordion.addEventListener('click', () =>{
+          icons.classList.toggle('active');
+          answers.classList.toggle('active');
+      });
+  });
+
+</script>
 
 </body>
 </html>

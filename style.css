@@ -357,10 +357,11 @@ color:#fff;
       margin: 0;
   }
 }
+
 /**Why Choose Our Timesheet Management System? end here**/
 
 
-/* Key Features of Our Employee Timesheet start here*/
+/* Key Features start here*/
 .Key-features {
   text-align: center;
   padding: 3.75rem 6.25rem 0rem;
@@ -431,6 +432,7 @@ color:#fff;
 }
 
 /**3 row grid code end**/
+
 .card-1-img img, .card-1-img {
   width: 100%;
   height: auto;
@@ -483,6 +485,7 @@ color:#fff;
 }
 
 /**3 row grid card end here**/
+
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .Key-features {
@@ -549,7 +552,7 @@ color:#fff;
 /*features card end hare*/
 
 
-/*Key Features of Our Employee Timesheet end here*/
+/*Key end here*/
 
 
  /**How Does Our Employee Timesheet System Work? end here**/
@@ -1323,7 +1326,7 @@ cursor: pointer;
 }
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 .ready-to-container {
   max-width: 100%;
   padding: 0.8rem;
@@ -1346,7 +1349,91 @@ cursor: pointer;
   font-size: 0.8rem;
   margin-bottom:2rem;
 }
+}*/
+
+/**ready-to container small screnn custumize size for all apages**/
+
+/*workflow-m*/
+
+@media (max-width: 480px) {
+  .workflow-man {
+    max-width: 100%;
+    padding: 0.8rem;
+    bottom: 4.75rem;
+  }
+  .ready-to-container img {
+    width: 20vw;
+  }
+
+  .ready-to-text h5 {
+    font-size:1.625rem;
+  }
+
+  .ready-to-text p {
+    font-size: 0.85rem;
+  }
+
+  .ready-to-container button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+    margin-bottom:2rem;
+  }
 }
+
+/*employee-per*/
+@media (max-width: 480px) {
+  .employee-per {
+    max-width: 100%;
+    padding: 0.8rem;
+    bottom: 5.75rem;
+  }
+  .ready-to-container img {
+    width: 15vw;
+  }
+  
+  .ready-to-text h5 {
+    font-size:1.50rem;
+  }
+  
+  .ready-to-text p {
+    font-size: 0.85rem;
+  }
+  
+  .ready-to-container button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+    margin-bottom:2rem;
+  }
+  }
+
+  /*task-m*/
+  @media (max-width: 480px) {
+    .landing-page {
+      max-width: 100%;
+      padding: 0.6rem;
+      bottom: 1rem;
+    }
+  
+    .ready-to-container img {
+      width: 15vw;
+    }
+  
+    .ready-to-text h5 {
+      font-size: 1.5rem;
+    }
+  
+    .ready-to-text p {
+      font-size: 0.85rem;
+    }
+  
+    .ready-to-container button {
+      padding: 0.5rem 1.2rem;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+/**ends here**/
 
 @media (max-width: 350px) {
 .ready-to-container {
@@ -1594,10 +1681,11 @@ font-size: 1.5rem;
   color: #666666;
   padding-bottom: 1.67rem;  
 }
+
 /**updated code end here */
 
 
-/* Card Row Styling */
+/*  new card desig for team collabration Cards Row Styling */
 .card-row {
   display: flex;
   justify-content: space-between;
@@ -1749,5 +1837,7 @@ font-size: 1.5rem;
     padding: 1.5rem;
   }
 }
+
+/*end here*/
 
 
