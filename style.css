@@ -1410,8 +1410,8 @@ cursor: pointer;
   @media (max-width: 480px) {
     .landing-page {
       max-width: 100%;
-      padding: 0.6rem;
-      bottom: 1rem;
+      padding: 0.8rem;
+      bottom: 1.75rem;
     }
   
     .ready-to-container img {
