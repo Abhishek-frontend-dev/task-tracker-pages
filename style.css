@@ -1837,6 +1837,12 @@ font-size: 1.5rem;
     padding: 1.5rem;
   }
 }
+.ai-ml-text{
+color: #091c39;
+  font-size: 1.3rem;
+  text-align: center;
+  justify-content: center;
+}
 
 /*end here*/
 
