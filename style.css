@@ -414,7 +414,7 @@ color:#fff;
   color: #091C39;
   margin-bottom: 0.5rem;
   font-family: ProximaNovaaltBold, monospace;
-  min-height: 3rem;
+  min-height: 2rem;
   font-weight: bolder;
   text-align: start;
   margin-top: 1rem;
@@ -1840,7 +1840,9 @@ font-size: 1.5rem;
 .ai-ml-text{
 color: #091c39;
   font-size: 1.3rem;
-  justify-content: center;
+  line-height: 1.5;
+  word-spacing: -2px;
+  text-align:initial;
 }
 
 /*end here*/
