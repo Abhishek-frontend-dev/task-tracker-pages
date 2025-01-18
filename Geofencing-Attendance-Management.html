@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geofencing Attendance Management</title>
+    <link rel="stylesheet" href="livepage_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+.card {
+    flex:1;
+  }
+
+  /**3 row grid card end here**/
+
+  @media (max-width: 1024px){
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      justify-items: center;
+    }
+  }
+
+  .step-text {
+    flex: 1;
+    max-width: 100%;
+    padding-left:1rem;
+  }
+
+
+  /*qna just end here*/
+
+  /**ready-to start here**/
+
+  .ready-to-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f6f6;
+    padding: 40px 31px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 100;
+    position: relative;
+    bottom:0.625rem;
+    max-width: 94%;
+    margin-top:0;
+  }
+
+      @media (max-width: 1024px) {
+
+    .clientreviewbox{
+    height:22rem;
+  }
+
+  .qna-container{
+    padding: 0.75rem 2.95rem 1rem;
+    margin: 3rem 4rem;
+  }
+
+  .mobileapp{
+    margin-top:-3rem;
+  }
+
+  .content-wrapper{
+    padding: 140px 0px;
+  }
+ 
+  h2.integraion {
+        padding: 0 3px!important;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .ai-ml-text{
+        text-align:center;
+    }
+
+    .how-it-works-heading {
+        font-size: 1.7rem;
+      }
+
+      }
+
+
+  /* Large Screens (iPad Pro and devices > 820px) */
+  @media (max-width: 821px) {
+    .client-img {
+          width: 250px;
+          margin-top: -2.89rem;
+          overflow:hidden;
+      }
+
+      section{
+      padding:50px 57px;
+    }
+
+    .clients-thought{
+      margin:0rem;
+      padding:1rem;
+      margin-top:-2rem;
+    }
+    .clientreviewbox{
+   height:29rem;
+}
+
+  .vdo3{
+    position:relative;
+    top:0.2rem;
+  }
+
+  .full-heading{
+    padding: 2.3rem 0rem 0rem; 
+    margin:0px;
+  }
+
+
+  .qna-container{
+    margin-top:5.45rem;
+  }
+
+  .ready-to-start {
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -12rem;
+    height: 50vh;
+    position: relative;
+    z-index: 10;
+  }
+
+  .ready-to-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f6f6;
+    padding: 40px 31px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 100;
+    position: relative;
+    top:8.78rem;
+    max-width: 100%;
+    margin-top:0;
+  }
+
+      .Key-features {
+    text-align: center;
+    padding: 2.75rem 2.25rem 0rem;
+  }
+
+  .break-point{
+    margin-top:1.890rem;
+  }
+  }
+
+  /* iPad Mini and iPad Air (768px to 820px) */
+  @media (max-width: 768px){
+
+    .client-img {
+          width: 250px;
+          margin-top: -1.89rem;
+          overflow:hidden;
+      }
+   
+    .clientreviewbox{
+    height:24rem;
+    padding:0.878rem;
+  }
+
+
+  .ready-to-start {
+        width: 100%;
+        display: flex;
+        padding: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -8rem;
+        height: 50vh;
+        position: relative;
+        z-index: 10;
+        }
+
+  .ready-to-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f6f6;
+    padding: 40px 31px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 100;
+    position: relative;
+    top:6.78rem;
+    max-width: 100%;
+    margin-top:0;
+  }
+
+  .task-section {
+    padding: 2.75rem 1.25rem 0rem;
+  }
+
+  .how-it-works {
+        padding: 3.56rem 1rem 0rem;
+    }
+
+    img.leftclient, img.rightclient {
+    margin-top: 0;
+    max-width: 80%;
+    position: relative;
+    right:4rem;
+    top:0rem;
+  }
+  .carousel-control-next {
+    right: 17px;
+}
+}
+
+
+  /** 480px* */
+  @media (max-width: 431px) {
+    .ready-to-start {
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -3rem;
+    height: 50vh;
+    position: relative;
+    z-index: 10;
+  }
+
+  .ready-to-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f6f6;
+    padding: 40px 31px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 100;
+    position: relative;
+    top:2.10rem;
+    max-width: 100%;
+    margin-top:0;
+  }
+
+  .font-weight-light {
+    padding: 1.67rem 0rem 2rem;
+    font-size:0.67rem;
+    margin-left:1rem;
+  }
+
+    .how-it-works {
+        padding:3rem 1rem 0rem;
+      }
+
+  .step-text {
+    flex: 1;
+    max-width: 100%;
+    padding-left: 0.547rem;
+}
+
+.qna-container{
+    margin-top:2.55rem;
+    margin:2.55rem 2rem;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 100%;
+    }
+
+
+    section {
+        padding: 50px 26px;
+    }
+    .carousel-control-next {
+    right: 21px;
+  }
+
+  .client-img {
+          width: 180px;
+          margin-top:0rem;
+          overflow:hidden;
+      }
+      .client-img img {
+          width: 100%;
+          height: auto;
+          overflow:hidden;
+      }
+
+      .clientreviewbox{
+    height:auto;
+    padding:0.878rem;
+  } 
+
+  }
+
+
+
+  /**small screen sizes**/
+
+  @media (min-width:375px) and (max-width:380px){
+
+  .ready-to-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f6f6;
+    padding: 40px 31px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 100;
+    position: relative;
+    top:-8rem;
+    max-width: 100%;
+    margin-top:0;
+  }
+
+  .testimonial{
+    padding: 2.75rem 1.75rem 0rem; 
+  }
+
+  .how-it-works {
+        padding:2.78rem 1rem 0rem;
+      }
+ 
+  img.leftclient, img.rightclient {
+    margin-top: 0;
+    max-width: 100%;
+    position: relative;
+    right:0rem;
+    top:1rem;
+  }
+
+  .step-text{
+    padding:0px 10px 0px
+  }
+
+  }
+
+
+  /**just for this page only i am breaking points extra**/
+
+@media (max-width:398px){
+  .ready-to-start {
+  width: 100%;
+  display: flex;
+  padding: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  height: 50vh;
+  position: relative;
+  z-index: 10;
+}
+
+.ready-to-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9f6f6;
+  padding: 40px 31px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  z-index: 100;
+  position: relative;
+  top:-1.690rem;
+  max-width: 100%;
+  margin-top:0;
+}
+
+.step-text {
+    flex: 1;
+    max-width: 100%;
+    padding-left: 0.547rem;
+}
+
+}
+
+@media (max-width:385px){
+  .ready-to-start {
+  width: 100%;
+  display: flex;
+  padding: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 13rem;
+  height: 50vh;
+  position: relative;
+  z-index: 10;
+}
+
+.ready-to-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9f6f6;
+  padding: 40px 31px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  z-index: 100;
+  position: relative;
+  top:-9.890rem;
+  max-width: 100%;
+  margin-top:0;
+}
+
+}
+    </style>
+
+    </style>
+</head>
+<body>
+    
+
+       <!--Hero Section start here-->
+<section class="herosection">
+    <!--hero left side-->
+            <div class="hero-left">
+                <h1 class="header-heading">Geofencing Attendance Management</h1>
+                <span class="hero-sub-text">Simplify Attendance with Geofencing Technology</span>
+                <p class="hero-text">Tracking employee attendance has never been easier with geofencing attendance management. A revolutionary approach that combines technology and convenience, it ensures precise tracking while enhancing productivity.</p>
+                <a href="https://tasktracker.in/app/employer/registration" class="hero-btn-sign-up">Sign Up</a>   
+                <a href="https://www.tasktracker.io/request-demo" class="hero-btn">Book Demo</a>    
+            </div>
+    
+            <!--hero right side-->
+    
+            <div class="hero-right">
+                <img src="assets/images-empoly-man/header-human-task-management.png.webp" alt="">
+            </div>
+    
+        </section>
+    
+        <!--hero section end here-->
+
+
+
+           <!--What is Geofencing Attendance Management? start-->
+
+
+    <section class="task-section">
+
+        <!--task part-->
+
+<div class="task">
+<div class="full-width">
+    <h2 class="full-width-heading">What is Geofencing Attendance Management?</h2>
+</div>
+<div class="two-col">
+    <div class="left">
+        <img src="assets/images-timesheet-man/Why-chose-our-tms.webp" alt="">
+    </div>
+    <div class="right">
+            <p class="task-text ai-ml-text">Geofencing attendance management is a system that uses virtual boundaries, known as geofences, to monitor and log employee attendance. Employees clock in or out based on their physical presence within these predefined areas.</p>
+    </div>
+</div>
+</div>
+</section>
+
+  <!--What is Geofencing Attendance Management? end here-->
+
+
+
+  <!--Key Features of Geofencing Attendance Systems start here-->
+
+<div class="Key-features">
+    <h2 class="kye-features-heading">Key Features of Geofencing Attendance Systems</h2>
+ <div class="card-container">
+    <div class="card employee-card">
+        <div class="card-1-img"><img src="assets/images-empoly-man/Integration.webp" alt=""></div>
+        <h3 class="card-1-heading">Virtual Boundaries</h3>
+        <p class="card-1-para">Define specific geographic areas for attendance tracking, ensuring employees clock in and out only from authorized locations effectively.</p>    
+    </div>
+    <div class="card">
+        <div class="card-1-img"><img src="assets/images-empoly-man/Real-Time-Collaboration.webp" alt=""></div>
+        <h3 class="card-1-heading">Automated Tracking</h3>
+        <p class="card-1-para">Automatically record employee entry and exit times without manual intervention, reducing errors and enhancing efficiency in attendance management.</p>
+    </div>
+    <div class="card">
+        <div class="card-1-img"><img src="assets/images-empoly-man/Comprehensive-Task-Management.webp" alt=""></div>
+        <h3 class="card-3-heading">Real-time Monitoring</h3>
+        <p class="card-3-para">Receive instant updates on attendance status and employee movements, enabling immediate action for discrepancies or time-sensitive operations.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-1-img"><img src="assets/images-empoly-man/Real-Time-Collaboration.webp" alt=""></div>
+        <h3 class="card-3-heading">Customizable Geofences</h3>
+        <p class="card-3-para">Create and modify geofences to match unique business requirements, accommodating diverse industries and flexible workplace arrangements seamlessly.</p>
+    </div>
+
+  </div>
+  </div>
+
+<!--Key Features of Geofencing Attendance Systems end here-->
+
+
+
+ <!--How Does Geofencing Time and Attendance Work? start here-->
+
+ <div class="how-it-works">
+    <h3 class="how-it-works-heading">How Does Geofencing Time and Attendance Work?</h3>
+
+
+    <!-- Step 1 -->
+    <div class="how-it-works-step">
+        <div class="step-img">
+            <img src="assets/images-empoly-man/Sign-Up.webp" alt="Step 1">
+        </div>
+        <div class="step-text">
+            <h3 class="step-heading">Setup Virtual Geofences</h3>
+            <p class="step-description">Define specific zones like office premises, worksites, or client locations by setting up virtual boundaries using geofencing technology. This ensures only authorized areas are used for attendance marking.</p>
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="how-it-works-step reverse">
+        <div class="step-text">
+            <h3 class="step-heading">App Attendance Marking</h3>
+            <p class="step-description">Employees log in and out effortlessly using the geo-attendance app, which automatically tracks their presence when they enter or leave the geofence zones.</p>
+        </div>
+        <div class="step-img">
+            <img src="assets/images-empoly-man/Assign-and-Manage-task.webp" alt="Step 2">
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="how-it-works-step">
+        <div class="step-img">
+            <img src="assets/images-empoly-man/Track-Progress-in-real-time.webp" alt="Step 3">
+        </div>
+        <div class="step-text">
+            <h3 class="step-heading">Real-Time Alerts</h3>
+            <p class="step-description">Receive instant notifications about tardiness, missed check-ins, or attendance discrepancies, enabling quick resolution and maintaining accountability across all operational locations.</p>
+        </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="how-it-works-step reverse">
+        <div class="step-text">
+            <h3 class="step-heading">Data Capturing</h3>
+            <p class="step-description">Attendance data is captured seamlessly in real-time for thorough analysis. It helps monitor employee presence and ensures accurate reporting for compliance purposes.</p>
+        </div>
+        <div class="step-img">
+            <img src="assets/images-empoly-man/Generate-Reports.webp" alt="Step 4">
+        </div>
+    </div>
+</div>
+
+
+<!--How Does Geofencing Time and Attendance Work? end here-->
+
+
+
+  <!--Why Your Business Needs a Geofencing Time and Attendance System start-->
+
+
+  <section class="task-section">
+
+    <!--task part-->
+
+<div class="task">
+<div class="full-width">
+<h2 class="full-width-heading">Why Choose Geo-Attendance Tracking?</h2>
+</div>
+<div class="two-col">
+<div class="left">
+    <img src="assets/images-timesheet-man/Why-chose-our-tms.webp" alt="">
+</div>
+<div class="right">
+    <ul>
+        <li class="task-text"><strong>Stay Ahead of the Curve:</strong> The geofencing attendance system boosts operational efficiency with automated time-tracking. Gain actionable insights through detailed attendance reports for better decision-making and streamlined workforce management.</li>
+        <li class="task-text"><strong>Save Time and Resources:</strong> Eliminate the hassle of manual attendance logs with the geofencing time and attendance system. Minimize payroll errors and reduce administrative overhead to save valuable time and resources.</li>
+        <li class="task-text"><strong>Improve Employee Experience:</strong> Simplify attendance processes for employees using the geofencing time and attendance app. Ensure fair, transparent tracking that promotes trust and satisfaction among team members.</li>
+        <li class="task-text"><strong>Ensure Compliance:</strong> Maintain accurate records for audits and legal requirements with the geofencing attendance system. Ensure compliance with industry standards while reducing risks related to record-keeping inaccuracies.</li>
+    </ul>
+</div>
+</div>
+</div>
+</section>
+
+<!--Why Your Business Needs a Geofencing Time and Attendance System end here-->
+
+
+ <!--ctc section-->
+ <div class="try">
+    <div class="try-left">
+        <img src="assets/images-timesheet-man/Time-Manage-cta.webp" alt="">
+    </div>
+
+    <div class="try-right">
+        <h4 class="try-left-text">Embrace the Future of Attendance Management</h4>
+        <a href="https://www.tasktracker.io/request-demo" class="try-btn">Book a Demo</a>
+    </div>
+</div>
+
+<!--ctc section end here-->
+
+
+<!--more task start here-->
+
+<h4 class="more-task-heading">Beyond a Simple Attendance Management System</h4>
+<p class="more-task-para">Explore the full potential and amazing capabilities of Task Tracker. </p>
+<!--more task grid-->
+<div class="more-task-container">
+<a href="#" class="more-task-itme">
+<h5 class="more-task-text">Leave Management System</h5>
+<img src="assets/images-empoly-man/Team-Collaboration.webp" alt="">
+</a>
+<a href="#" class="more-task-itme">
+<h5 class="more-task-text">Effortless Attendance management </h5>
+<img src="assets/images-empoly-man/App-Integration.webp" alt="">
+</a>
+
+<a href="#" class="more-task-itme">
+<h5 class="more-task-text">Geo-Location Attendance Management</h5>
+<img src="assets/images-empoly-man/Employee-Performance.webp" alt="">
+</a>
+</div>          
+</div>
+<!--more task end here-->
+
+
+<!--faqs start here-->
+
+<div class="qna-container">
+<h3 class="full-width-heading">FAQ</h3>
+<p class="full-width-para">You Also Must Know</p>
+<div class="accordion">
+<div class="question">
+<h4>What is a geofencing attendance system?</h4>
+<i class=" icon fa fa-caret-down" aria-hidden="true"></i>
+</div>
+<div class="answer">
+<p>A geofencing attendance system uses virtual boundaries to automatically log employee attendance based on their location.
+</p>
+</div>
+</div>
+<!--qna 2-->
+<div class="accordion">
+<div class="question">
+<h4>How does a geo-attendance app work?</h4>
+<i class=" icon fa fa-caret-down" aria-hidden="true"></i>
+</div>
+<div class="answer">
+<p>Employees use the app, which records their attendance automatically when they enter or exit predefined geofenced areas.
+</p>
+</div>
+</div>
+
+<!--qna 3-->
+<div class="accordion">
+<div class="question">
+<h4>Is the geofencing time and attendance system secure?</h4>
+<i class=" icon fa fa-caret-down" aria-hidden="true"></i>
+</div>
+<div class="answer">
+<p> Yes, these systems use advanced encryption and secure protocols to ensure data protection.</p>
+</div>
+</div>
+
+<div class="accordion">
+<div class="question">
+<h4>  Can geofencing work for remote teams?</h4>
+<i class=" icon fa fa-caret-down" aria-hidden="true"></i>
+</div>
+<div class="answer">
+<p>Absolutely! You can set geofences for remote work locations or client sites, ensuring flexibility and efficiency.</p>
+</div>
+</div>
+
+</div>
+
+<!--faqs end here-->
+
+
+<!--ready to start start here-->
+
+<section class="ready-to-start">
+<div class="ready-to-container landing-page">
+<img src="assets/images-empoly-man/350Asset-3.png" alt="">
+<div class="ready-to-text">
+<h5>Ready to Transform Your Workflow?</h5>
+<p>Join thousands of satisfied businesses using Task Tracker for their task management needs. Sign up for free today and experience the best task management app in action.</p>
+</div>
+<a href="https://tasktracker.in/app/employer/registration" class="ready-to-btn">Sign Up</a>  
+</div>
+</section>
+
+<!--ready to start end here-->
+
+<!--script-->  
+<script>
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion =>{
+const icons = accordion.querySelector('.icon');
+const answers = accordion.querySelector('.answer');
+
+accordion.addEventListener('click', () =>{
+icons.classList.toggle('active');
+answers.classList.toggle('active');
+});
+});
+
+</script>
+</body>
+</html>
