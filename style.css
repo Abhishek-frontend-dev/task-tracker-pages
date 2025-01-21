@@ -579,7 +579,7 @@ color:#fff;
 
 .step-img {
   flex: 1;
-  max-width: 40%;
+  max-width: 100%;
    transition: all ease 0.5s;
 }
 .step-img:hover{
