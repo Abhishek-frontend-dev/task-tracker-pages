@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .headings{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dot{
+
+            width: auto;
+            height: auto;
+            background-color:rgb(220, 220, 220);
+            padding: 6px 23px 10px;
+            border-radius: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+
+        .mySlides {
+        display: flex;
+        background-color: rgb(246, 246, 255);
+        padding: 3rem 2rem 1rem;
+        border-radius: 15px;
+        gap: 2rem;
+        }
+
+        .slider-inner{
+            display: flex;
+        }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 2rem 5rem 3rem;
+}
+
+.text {
+    width: 50%;
+    height: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+flex: 1;
+width: 50%;
+line-height: 2;
+padding: 20px;
+}
+
+h2{
+    font-size: 2.3rem;
+}
+p{
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+  background-color: rgba(17, 125, 17, 0.219);
+  color: rgb(0, 209, 59);
+}
+
+/* Fading animation */
+.fade {
+    transition: 0.5ms;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  position: relative;
+}
+
+.prev{
+    width: 100px;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+.nxt{
+    width: 00px;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn{
+    position: relative;
+    bottom: 0px;
+    margin: 3rem 0rem 2rem;
+}
+
+@keyframes fade {
+    0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+/**hero section start here**/
+
+
+.hero-section{
+    padding: 2rem 8rem 0rem;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(130deg,#1c4496,#e6638a);;    
+}
+.hero-container{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.hero-right{
+    width: 50%;
+}
+.hero-left{
+    width: 50%;
+}
+
+.hero-heading{
+    font-size: 2.65rem;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.hero-para{
+    font-size: 1.3  rem;
+    color: rgb(237, 234, 234);
+    margin:2rem 0rem 2rem;
+    line-height: 1.3;
+}
+
+
+
+/**hero section end here**/
+    </style>
+</head>
+<body>
+
+
+    <!--home section start here-->
+
+<section class="hero-section">
+
+<div class="hero-container">
+     <div class="hero-right">
+    <h2 class="hero-heading">
+        Effective Project Management for Event Planners
+    </h2>
+    
+    <p class="hero-para">Revolutionize the way you organize, coordinate, and execute events. Leverage powerful Flowlu features to enhance efficiency, collaboration, and deliver memorable experiences for event attendees.</p>
+    
+    <a href="#">Get started for free</a>
+        </div>
+    
+        <div class="hero-left">
+            <img src="assets/images-empoly-man/main_event.png" alt="">
+        </div>
+    </div>
+   
+    <div class="feature">
+        <span>
+            <div class="feature-container">
+                <div class="featur-right"><img src="" alt="">
+                </div>
+                <div class="feature-left"><h3>All-in-one</h3>
+                <p>Everything for planning, managing and analyzing your projects.</p></div>
+            </div>
+        </span>
+
+        <span>
+            <div class="feature-container">
+                <div class="featur-right"><img src="" alt="">
+                </div>
+                <div class="feature-left"><h3>Easy-to-use</h3>
+                <p>Explore the seamless onboarding and knowledge base.</p></div>
+            </div>
+        </span>
+
+        <span>
+            <div class="feature-container">
+                <div class="featur-right"><img src="" alt="">
+                </div>
+                <div class="feature-left"><h3>Fully customizable</h3>
+                <p>Customize Flowlu to meet exactly your business needs.</p></div>
+            </div>
+        </span>
+
+        <span>
+            <div class="feature-container">
+                <div class="featur-right"><img src="" alt="">
+                </div>
+                <div class="feature-left"><h3>Secure</h3>
+                <p>All your information is stored and encrypted using the TLS protocol.</p></div>
+            </div>
+        </span>
+    </div>
+</section>
+
+    <!--home section end here-->
+    
+
+<h2 style="text-align:center;">Features Designed to Boost Your Marketing Efforts</h2>
+
+<div class="headings">
+  <span class="dot">Customer Management</span> 
+  <span class="dot">Product Database</span> 
+  <span class="dot">Invoices & Contracts</span> 
+  <span class="dot">Workflow Automation</span> 
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+    <div class="slider-inner fade"> <div class="numbertext">
+        <h2>Marketing Project Planning</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae quibusdam optio voluptate ipsam sit debitis officia asperiores molestiae fugiat! Ullam, accusantium hic. Cupiditate sequi rem, saepe excepturi iste dolorem.</p>   
+      </div>
+      <div class="text"> <img src="assets/images-empoly-man/Assign-and-Manage-task.webp" style="width:100%"></div>
+    </div>
+</div>
+ 
+<div class="mySlides">
+    <div class="slider-inner fade"> <div class="numbertext">
+        <h2>Marketing Project Planning</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae quibusdam optio voluptate ipsam sit debitis officia asperiores molestiae fugiat! Ullam, accusantium hic. Cupiditate sequi rem, saepe excepturi iste dolorem.</p>   
+      </div>
+      <div class="text"> <img src="assets/images-empoly-man/Real-Time-Collaboration.webp" style="width:100%"></div>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="slider-inner fade">
+        <div class="numbertext">
+        <h2>Marketing Project Planning</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae quibusdam optio voluptate ipsam sit debitis officia asperiores molestiae fugiat! Ullam, accusantium hic. Cupiditate sequi rem, saepe excepturi iste dolorem.</p>   
+      </div>
+      <div class="text"> <img src="assets/images-empoly-man/apartmenttimes.webp" style="width:100%"></div>
+    </div>
+</div>
+
+
+<div class="mySlides">
+    <div class="slider-inner fade">
+        <div class="numbertext">
+        <h2>Marketing Project Planning</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae quibusdam optio voluptate ipsam sit debitis officia asperiores molestiae fugiat! Ullam, accusantium hic. Cupiditate sequi rem, saepe excepturi iste dolorem.</p>   
+      </div>
+      <div class="text"> <img src="assets/images-empoly-man/Generate-Reports.webp" style="width:100%"></div>
+    </div>
+</div>
+
+</div>
+<br>
+
+
+
+<script>
+let slideIndex = 0;
+showSlides(); 
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 } 
+
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";  
+  dots[slideIndex - 1].className += " active"; 
+
+setTimeout(showSlides, 6000); 
+}
+
+const dots = document.getElementsByClassName("dot");
+for (let i = 0; i < dots.length; i++) {
+
+  dots[i].addEventListener('click', () => {
+    slideIndex = i;
+    showSlides();  
+  });
+}
+
+
+
+</script>
+</body>
+</html>

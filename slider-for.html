@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+  /* Hide all slides initially */
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+/* Style for the navigation dots (headings) */
+.dot {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  color: gray;
+  margin: 0 10px;
+}
+
+/* Style for the active dot */
+.dot.active {
+  color: blue;
+}
+
+/* Optional: Style for the slide images */
+.mySlides img {
+  width: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+/* Positioning of the buttons (if you add next/prev buttons) */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="headings">
+        <span class="dot">Customer Management</span>
+        <span class="dot">Product Database</span>
+        <span class="dot">Invoices & Contracts</span>
+        <span class="dot">Workflow Automation</span>
+      </div>
+      
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <div class="slider-inner">
+            <div class="numbertext">
+              <h2>Marketing Project Planning</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="text"><img src="assets/images-empoly-man/Assign-and-Manage-task.webp" style="width:100%"></div>
+          </div>
+        </div>
+        
+        <div class="mySlides">
+          <div class="slider-inner">
+            <div class="numbertext">
+              <h2>Marketing Project Planning</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="text"><img src="assets/images-empoly-man/Real-Time-Collaboration.webp" style="width:100%"></div>
+          </div>
+        </div>
+      
+        <div class="mySlides">
+          <div class="slider-inner">
+            <div class="numbertext">
+              <h2>Marketing Project Planning</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="text"><img src="assets/images-empoly-man/apartmenttimes.webp" style="width:100%"></div>
+          </div>
+        </div>
+      
+        <div class="mySlides">
+          <div class="slider-inner">
+            <div class="numbertext">
+              <h2>Marketing Project Planning</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="text"><img src="assets/images-empoly-man/Generate-Reports.webp" style="width:100%"></div>
+          </div>
+        </div>
+      
+        <!-- Navigation buttons (next and prev) -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      
+<script>
+
+let slideIndex = 0;  // Initialize the slide index
+let slides = document.getElementsByClassName("mySlides");  // Get all slides
+let dots = document.getElementsByClassName("dot");  // Get all dot navigation elements
+
+// Function to show a specific slide
+function showSlide(n) {
+  if (n >= slides.length) slideIndex = 0;  // If we've reached the end, loop to the beginning
+  if (n < 0) slideIndex = slides.length - 1;  // If we've gone before the start, loop to the end
+
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Remove active class from all dots
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  // Show the current slide
+  slides[slideIndex].style.display = "block";
+
+  // Highlight the active dot
+  dots[slideIndex].classList.add("active");
+}
+
+// Function for automatic sliding every 6 seconds
+function autoSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+// Listen for click events on each heading
+for (let i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", function() {
+    slideIndex = i;  // Set slideIndex to the clicked heading
+    showSlide(slideIndex);
+  });
+}
+
+// Next and Previous Buttons
+function plusSlides(n) {
+  slideIndex += n;  // Change slideIndex by n (1 for next, -1 for previous)
+  showSlide(slideIndex);
+}
+
+// Initially show the first slide
+showSlide(slideIndex);
+
+// Set interval for automatic sliding
+setInterval(autoSlide, 6000);
+
+
+
+//error code
+
+
+let slideIndex = 0;//inirialized the slider index to "0"
+//slected slider and heading
+
+let slides = document.getElementsByClassName("myslides");
+let dots = document.getElementsByClassName("dot");
+
+function showSlide(n){
+
+    if(n >= slides.length) slideIndex = 0; // if we reached the end loop back to the first one
+    if (n < 0) slideIndex = slides.length -1; //if we gone before the start  loop to the end
+
+    // hide all slides
+    for (let i=0 ; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+
+    // remove acrive class from all dots
+
+    for(let i=0; i < dots.length; i++){
+        dots[i].classList.remove("active");
+    }
+
+    //show the current slide
+    slides[slideIndex].style.display = "block";
+
+    //highlight the active dot
+
+    dots[slideIndex].classList.add("active");
+
+}
+
+
+    //function for automatic sliding
+
+    function autoSlide(){
+        slideIndex++;
+        showSlide(slideIndex);
+    }
+
+    //listen for click event on each headng
+
+    for(let i =0; i <dots.length; i++){
+        dots[i].addEventListener("click",function(){
+            slideIndex = i;  // Set slideIndex to the clicked heading
+            showSlide(slideIndex);
+        });
+    }
+
+    
+    // Next and Previous Buttons
+function plusSlides(n) {
+  slideIndex += n;  // Change slideIndex by n (1 for next, -1 for previous)
+  showSlide(slideIndex);
+}
+
+    // Initially show the first slide
+showSlide(slideIndex);
+
+// Set interval for automatic sliding
+setInterval(autoSlide, 6000);
+
+</script>
+</body>
+</html>
